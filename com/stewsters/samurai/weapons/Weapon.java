@@ -1,4 +1,6 @@
-package com.stewsters.samurai;
+package com.stewsters.samurai.weapons;
+
+import com.stewsters.samurai.Man;
 
 public interface Weapon
 {

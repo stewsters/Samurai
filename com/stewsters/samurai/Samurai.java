@@ -2,8 +2,16 @@ package com.stewsters.samurai;
 
 import java.util.Random;
 
+import com.stewsters.samurai.weapons.Katana;
+import com.stewsters.samurai.weapons.Weapon;
+
 public class Samurai extends Man
 {
+	public int id;
+	public String familyName;
+	public String personalName;
+	
+	
 	/*
  	public int life;
 	public int speed;
@@ -14,13 +22,13 @@ public class Samurai extends Man
 	public Samurai()
 	{
 		Random r = new Random();
-		//give armor
-		armor += 1+r.nextInt(2); //1-3 armor
-		//give life
-		//give weapon
-		
-		weapon = new Katana();
+		armor += (1+r.nextInt(3)); //give 1-3 armor
+		life += r.nextInt(3); //give life
+		weapon = new Katana();//give weapon
 	}
+	
+	
+	
 	
 	public void attack(Man m)
 	{

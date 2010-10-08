@@ -1,6 +1,8 @@
-package com.stewsters.samurai;
+package com.stewsters.samurai.weapons;
 
 import java.util.Random;
+
+import com.stewsters.samurai.Man;
 
 public class Katana implements Weapon
 {
