@@ -25,10 +25,9 @@ public class Samurai extends Man
 		armor += (1+r.nextInt(3)); //give 1-3 armor
 		life += r.nextInt(3); //give life
 		weapon = new Katana();//give weapon
+		
+		NameGenerator.getName("Samurai",NameGenerator.male);
 	}
-	
-	
-	
 	
 	public void attack(Man m)
 	{
@@ -37,8 +36,8 @@ public class Samurai extends Man
 	
 	public void print()
 	{
-		System.out.println("Life:"+life);
-		System.out.println("Speed:"+speed);
-		System.out.println("Armor:"+armor);
+		System.out.println("Life:" + life);
+		System.out.println("Speed:"+ speed);
+		System.out.println("Armor:"+ armor);
 	}
 }
