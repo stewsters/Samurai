@@ -2,6 +2,8 @@ package com.stewsters.samurai;
 
 import java.util.Random;
 
+import com.stewsters.samurai.enums.Gender;
+import com.stewsters.samurai.enums.SocialClass;
 import com.stewsters.samurai.weapons.Katana;
 import com.stewsters.samurai.weapons.Weapon;
 
@@ -26,7 +28,7 @@ public class Samurai extends Man
 		life += r.nextInt(3); //give life
 		weapon = new Katana();//give weapon
 		
-		NameGenerator.getName("Samurai",NameGenerator.male);
+		NameGenerator.getName(SocialClass.SAMURAI, Gender.MALE);
 	}
 	
 	public void attack(Man m)

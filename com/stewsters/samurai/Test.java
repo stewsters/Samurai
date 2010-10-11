@@ -1,5 +1,8 @@
 package com.stewsters.samurai;
 
+import com.stewsters.samurai.enums.Gender;
+import com.stewsters.samurai.enums.SocialClass;
+
 public class Test
 {
 
@@ -21,6 +24,10 @@ public class Test
 		musashi.print();
 		tokugawa.print();
 		
+		for(int i =0; i < 100; i++)
+		{
+			System.out.println(NameGenerator.getName(SocialClass.SAMURAI, Gender.MALE));
+		}
 		
 		
 	}
