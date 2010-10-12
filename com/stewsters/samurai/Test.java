@@ -1,5 +1,7 @@
 package com.stewsters.samurai;
 
+import java.text.ParseException;
+
 import com.stewsters.samurai.enums.Gender;
 import com.stewsters.samurai.enums.SocialClass;
 
@@ -12,6 +14,10 @@ public class Test
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
+		
+		World.init();
+		
+		
 		Samurai musashi = new Samurai();
 		Samurai tokugawa = new Samurai();
 		
@@ -28,7 +34,7 @@ public class Test
 		{
 			System.out.println(NameGenerator.getName(SocialClass.SAMURAI, Gender.MALE));
 		}
-		
+//		NameGenerator.printString();
 		
 	}
 
