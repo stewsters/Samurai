@@ -8,6 +8,8 @@ public class Man
 	public int speed;
 	public int armor;
 	
+	
+	
 	public Man()
 	{
 		Random r = new Random();
