@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.TimeZone;
 
+import com.stewsters.samurai.Units.Man;
+
 
 public class World
 {

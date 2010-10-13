@@ -2,6 +2,7 @@ package com.stewsters.samurai;
 
 import java.text.ParseException;
 
+import com.stewsters.samurai.Units.Samurai;
 import com.stewsters.samurai.enums.Gender;
 import com.stewsters.samurai.enums.SocialClass;
 

@@ -1,6 +1,6 @@
 package com.stewsters.samurai.weapons;
 
-import com.stewsters.samurai.Man;
+import com.stewsters.samurai.Units.Man;
 
 public class Yomi implements Weapon
 {
