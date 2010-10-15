@@ -9,7 +9,7 @@ import com.stewsters.samurai.enums.SocialClass;
 public class Man
 {
 	public String name;	
-	
+	public Gender gender;
 	public int life;
 	public int speed;
 	public int armor;
@@ -17,7 +17,8 @@ public class Man
 	public Man()
 	{
 		Random r = new Random();
-		name = NameGenerator.getName(SocialClass.SAMURAI, Gender.MALE);
+		gender = Gender.MALE;
+		name = NameGenerator.getName(SocialClass.SAMURAI, gender);
 		life = 6 + r.nextInt(4); //6-10
 		speed = 2; //speed 2 default
 		armor = 0; //no armor by default

@@ -2,7 +2,7 @@ package com.stewsters.samurai;
 
 public class DateTime
 {
-	private int year = 1600;
+	private int year = 1600; //this goes negative for bc
 	private int month = 5;
 	private int day = 12;
 	private int hour = 12;
