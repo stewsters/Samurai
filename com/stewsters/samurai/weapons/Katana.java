@@ -2,7 +2,7 @@ package com.stewsters.samurai.weapons;
 
 import java.util.Random;
 
-import com.stewsters.samurai.Units.Man;
+import com.stewsters.samurai.units.Man;
 
 public class Katana implements Weapon
 {
@@ -15,10 +15,10 @@ public class Katana implements Weapon
 	}
 		
 	@Override
-	public void dealDamage(Man m)
+	public int getDamage()
 	{
 		Random r = new Random();
-		m.life = m.life - Math.max(0, r.nextInt(sharpness) - m.armor);
+		return Math.max(0, r.nextInt(sharpness));
 	}
 
 	@Override
@@ -26,6 +26,13 @@ public class Katana implements Weapon
 	{
 		// TODO Auto-generated method stub
 		return 1;
+	}
+
+	@Override
+	public int getSize()
+	{
+		// TODO Auto-generated method stub
+		return 2;
 	}
 
 }

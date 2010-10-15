@@ -1,4 +1,4 @@
-package com.stewsters.samurai.Units;
+package com.stewsters.samurai.units;
 
 import java.util.Random;
 
@@ -11,6 +11,6 @@ public class Ashigaru extends Bushi
 		Random r = new Random();
 		armor += (r.nextInt(3)); //give 1-3 armor
 		life += r.nextInt(2); //give life
-		weapon = new Yari();//give weapon
+		weapon = new Yari(); //give weapon
 	}
 }

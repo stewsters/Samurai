@@ -2,7 +2,7 @@ package com.stewsters.samurai.weapons;
 
 import java.util.Random;
 
-import com.stewsters.samurai.Units.Man;
+import com.stewsters.samurai.units.Man;
 
 //spear
 public class Yari implements Weapon
@@ -16,15 +16,21 @@ public class Yari implements Weapon
 		return length;
 	}
 	@Override
-	public void dealDamage(Man m)
+	public int getDamage()
 	{
 		Random r = new Random();
-		m.life -= Math.max(0, r.nextInt(sharpness-m.armor));
+		return Math.max(0, r.nextInt(sharpness));
 	}
 	
 	public Yari()
 	{
 		length = 3;
 		sharpness = 4;
+	}
+	@Override
+	public int getSize()
+	{
+		// TODO Auto-generated method stub
+		return 4;
 	}
 }

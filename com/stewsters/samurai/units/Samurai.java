@@ -1,4 +1,4 @@
-package com.stewsters.samurai.Units;
+package com.stewsters.samurai.units;
 
 import java.util.Random;
 

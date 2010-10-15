@@ -1,4 +1,4 @@
-package com.stewsters.samurai.Units;
+package com.stewsters.samurai.units;
 
 public class Ninja extends Bushi
 {
@@ -10,8 +10,12 @@ public class Ninja extends Bushi
 	
 	public Ninja()
 	{
-		incognito = true;
-		disquise = new Man();
+		incognito = false;
 		stealth = 10;
+	}
+	
+	public void Disguise(Man man)
+	{
+		disquise = man;
 	}
 }

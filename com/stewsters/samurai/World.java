@@ -1,7 +1,7 @@
 package com.stewsters.samurai;
 import java.util.ArrayList;
 
-import com.stewsters.samurai.Units.Man;
+import com.stewsters.samurai.units.Man;
 
 
 public class World

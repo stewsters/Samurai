@@ -1,10 +1,12 @@
-package com.stewsters.samurai;
+package com.stewsters.samurai.control;
 
 import java.text.ParseException;
 
-import com.stewsters.samurai.Units.Samurai;
+import com.stewsters.samurai.NameGenerator;
+import com.stewsters.samurai.World;
 import com.stewsters.samurai.enums.Gender;
 import com.stewsters.samurai.enums.SocialClass;
+import com.stewsters.samurai.units.Samurai;
 
 public class Test
 {
