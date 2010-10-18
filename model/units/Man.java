@@ -4,10 +4,10 @@ import java.util.Random;
 
 import javax.vecmath.Tuple2i;
 
-import com.stewsters.samurai.NameGenerator;
-import com.stewsters.samurai.enums.Gender;
-import com.stewsters.samurai.enums.SocialClass;
-
+import model.enums.Gender;
+import model.enums.SocialClass;
+import model.world.NameGenerator;
+import utility.Location;
 import control.Defender;
 
 public abstract class Man implements Defender
@@ -28,7 +28,7 @@ public abstract class Man implements Defender
 
 	public int speed;// not sure yet, perhaps horses will alter this
 	
-	public Tuple2i location;
+	public Location location;
 	//public int unarmed;
 	//skill for weapon
 	
@@ -45,6 +45,7 @@ public abstract class Man implements Defender
 		life = 6 + r.nextInt(4); //6-10
 		speed = 2; //speed 2 default
 		armor = 0; //no armor by default
+		location= new Location(2,2);
 	}
 	
 	//attempt to resist and save, else just take it

@@ -34,4 +34,8 @@ public class Yari implements Weapon
 		// TODO Auto-generated method stub
 		return 4;
 	}
+	public int getPiercing()
+	{
+		return 2;
+	}
 }

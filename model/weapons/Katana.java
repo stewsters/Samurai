@@ -35,5 +35,9 @@ public class Katana implements Weapon
 		// TODO Auto-generated method stub
 		return 2;
 	}
+	public int getPiercing()
+	{
+		return 3;
+	}
 
 }

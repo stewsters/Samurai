@@ -1,10 +1,10 @@
 package model.units;
 
 import model.weapons.Weapon;
-
+import control.Attacker;
 import control.Defender;
 
-public class Bushi extends Man
+public class Bushi extends Man implements Attacker
 {
 	public int horsemanship;
 	public Weapon weapon;
@@ -25,5 +25,32 @@ public class Bushi extends Man
 	{
 		// TODO Auto-generated method stub
 		return dodge;
+	}
+
+	@Override
+	public int getAttack()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getDamage()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getPiercing()
+	{
+		return weapon.getPiercing();
+	}
+
+	@Override
+	public int getRange()
+	{
+		
+		return weapon.getRange();
 	}
 }

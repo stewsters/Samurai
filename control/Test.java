@@ -1,13 +1,12 @@
 package control;
 
-import java.text.ParseException;
-
+import model.enums.Gender;
+import model.enums.SocialClass;
 import model.units.Samurai;
+import model.world.NameGenerator;
+import model.world.World;
+import control.action.MeleeAttack;
 
-import com.stewsters.samurai.NameGenerator;
-import com.stewsters.samurai.World;
-import com.stewsters.samurai.enums.Gender;
-import com.stewsters.samurai.enums.SocialClass;
 
 public class Test
 {
@@ -28,8 +27,12 @@ public class Test
 		musashi.print();
 		tokugawa.print();
 		
-		musashi.attack(tokugawa);
-		tokugawa.attack(musashi);
+		MeleeAttack a = new MeleeAttack(musashi, tokugawa);
+		a.activate();
+		MeleeAttack b = new MeleeAttack(tokugawa, musashi);
+		b.activate();
+		//musashi.attack(tokugawa);
+		//tokugawa.attack(musashi);
 		
 		musashi.print();
 		tokugawa.print();

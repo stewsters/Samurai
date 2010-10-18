@@ -39,5 +39,9 @@ public class Kyu implements Weapon
 		// TODO Auto-generated method stub
 		return 3;
 	}
+	public int getPiercing()
+	{
+		return 5;
+	}
 
 }

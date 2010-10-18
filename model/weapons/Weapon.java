@@ -18,6 +18,7 @@ public interface Weapon
 	
 	
 	public int getDamage();
+	public int getPiercing();
 
 	/*
 	 * In close quarters combat, small works better.  In open field combat
