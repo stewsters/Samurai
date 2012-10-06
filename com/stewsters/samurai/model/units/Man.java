@@ -1,6 +1,6 @@
 package com.stewsters.samurai.model.units;
 
-import com.stewsters.samurai.control.Defender;
+import com.stewsters.samurai.control.Combattant;
 import com.stewsters.samurai.model.enums.Gender;
 import com.stewsters.samurai.model.enums.SocialClass;
 import com.stewsters.samurai.model.world.NameGenerator;
@@ -9,7 +9,7 @@ import com.stewsters.samurai.utility.Location;
 import javax.vecmath.Tuple2i;
 import java.util.Random;
 
-public abstract class Man implements Defender {
+public abstract class Man implements Combattant {
     public String name;
     public Gender gender;
 

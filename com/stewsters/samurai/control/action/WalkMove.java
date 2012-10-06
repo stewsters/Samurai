@@ -1,13 +1,14 @@
+package com.stewsters.samurai.control.action;
 
-public class WalkMove
+public class WalkMove implements Action
 {
 	public WalkMove()
 	{
 		
 	}
 
-	
-	public void execute()
+	@Override
+	public void activate()
 	{
 		//check to see if anything is in the way.
 		

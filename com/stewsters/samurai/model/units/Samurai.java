@@ -1,11 +1,11 @@
 package com.stewsters.samurai.model.units;
 
+import com.stewsters.samurai.control.Combattant;
 import com.stewsters.samurai.model.weapons.Katana;
 
 import java.util.Random;
 
-
-public class Samurai extends Bushi {
+public class Samurai extends Bushi implements Combattant {
     public int id;
 
     public Samurai() {

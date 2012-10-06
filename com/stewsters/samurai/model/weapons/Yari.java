@@ -25,7 +25,6 @@ public class Yari implements Weapon {
 
     @Override
     public int getSize() {
-        // TODO Auto-generated method stub
         return 4;
     }
 

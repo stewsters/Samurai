@@ -1,10 +1,9 @@
 package com.stewsters.samurai.model.units;
 
-import com.stewsters.samurai.control.Attacker;
-import com.stewsters.samurai.control.Defender;
+import com.stewsters.samurai.control.Combattant;
 import com.stewsters.samurai.model.weapons.Weapon;
 
-public class Bushi extends Man implements Attacker {
+public class Bushi extends Man implements Combattant {
     public int horsemanship;
     public Weapon weapon;
     public int dodge;
@@ -14,7 +13,7 @@ public class Bushi extends Man implements Attacker {
     public int leadership;
 
     //This should be in control
-    public void attack(Defender m) {
+    public void attack(Combattant m) {
         m.injure(weapon.getDamage());
     }
 

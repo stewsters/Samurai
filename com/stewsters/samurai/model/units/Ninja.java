@@ -1,6 +1,8 @@
 package com.stewsters.samurai.model.units;
 
-public class Ninja extends Bushi {
+import com.stewsters.samurai.control.Combattant;
+
+public class Ninja extends Bushi implements Combattant {
 
     //Can appear as a different man
     public boolean incognito;
