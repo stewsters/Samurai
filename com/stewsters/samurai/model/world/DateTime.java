@@ -14,6 +14,17 @@ public class DateTime
 	{
 		year = month = day = hour = minute = second = 0;
 	}
+
+    public DateTime(int _year, int _month, int _day, int _hour, int _minute, int _second)
+    {
+        year = _year;
+        month = _month;
+        day = _day;
+        hour = _hour;
+        minute = _minute;
+        second = _second;
+    }
+
 	public void setFullDate(int _year, int _month, int _day, int _hour, int _minute, int _second)
 	{
 		year = _year;
