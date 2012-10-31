@@ -13,6 +13,8 @@ public class GroundTile {
     public void draw(PApplet context, int x, int y){
         if(groundType==GroundType.GRASS)
             context.stroke(50,200,50);
+        else if(groundType==GroundType.DIRT)
+            context.stroke(146,111,91);
         else if(groundType==GroundType.FOREST)
             context.stroke(10,100,50);
         else if (groundType == GroundType.HOUSE)
@@ -24,4 +26,9 @@ public class GroundTile {
         context.rect(x,y,1,1);
     }
 
+    public void grow(){
+        if(groundType == GroundType.DIRT){
+            groundType = GroundType.GRASS;
+        }
+    }
 }

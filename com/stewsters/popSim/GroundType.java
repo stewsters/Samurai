@@ -1,5 +1,5 @@
 package com.stewsters.popSim;
 
 public enum GroundType {
-    WHEAT,GRASS,FOREST,HOUSE
+    WHEAT,DIRT,GRASS,FOREST,HOUSE
 }
