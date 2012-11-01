@@ -5,18 +5,20 @@ import processing.core.PVector;
 
 public abstract class Critter {
 
+    Long id;
     //position
     PVector location;
     GroundTile onTile;
 
     float maxLifeSpan;
     float repRate;
-    float energy;
+    float energy =1;
     float maxEnergy = 1;
     float maxSpeed = 0.f;
 
     public Critter(PVector location) {
         this.location = location;
+        this.id = PopulationSim.getCritterId();
     }
 
     //move
@@ -34,5 +36,9 @@ public abstract class Critter {
         context.line(location.x, location.y, location.x + 1, location.y + 1);
     }
 
-    public abstract void react(PopulationSim context);
+    public abstract boolean react(PopulationSim context);
+
+    public Long getId(){
+        return id;
+    }
 }
