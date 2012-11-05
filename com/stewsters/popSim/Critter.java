@@ -3,6 +3,10 @@ package com.stewsters.popSim;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * A Critter is a living agent in the world.
+ **/
+
 public abstract class Critter {
 
     Long id;
